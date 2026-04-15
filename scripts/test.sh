@@ -8,10 +8,18 @@ echo "Running unit tests..."
 # For Go projects:
 # go test ./... -v
 node index.js <<EOF
-new-vip
 new-normal
+new-normal
+new-vip
+new-vip
+status
 add-bot
+add-bot
+remove-bot
+status
+exit
 EOF
+
 
 sleep 12
 

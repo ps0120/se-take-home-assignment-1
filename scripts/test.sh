@@ -7,21 +7,20 @@ echo "Running unit tests..."
 
 # For Go projects:
 # go test ./... -v
-node index.js <<EOF
-new-normal
-new-normal
-new-vip
-new-vip
-status
-add-bot
-add-bot
-remove-bot
-status
-exit
-EOF
+(
+  echo "new-normal"
+  echo "new-normal"
+  echo "new-vip"
+  echo "new-vip"
+  echo "status"
+  echo "add-bot"
+  echo "add-bot"
+  echo "remove-bot"
+  sleep 43
+  echo "exit"
+) | node index.js
 
-
-sleep 12
+sleep 2
 
 if grep -q "completed" scripts/result.txt; then
   echo "Test Passed"

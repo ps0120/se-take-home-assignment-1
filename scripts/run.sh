@@ -1,5 +1,4 @@
-#!/bin/bash
-node index.js
+
 #!/bin/bash
 
 # Run Script
@@ -9,20 +8,18 @@ echo "Running CLI application..."
 
 # For Node.js projects:
 # Run the CLI application with sample commands
-node index.js <<EOF
-new-normal
-new-normal
-new-vip
-new-vip
-status
-add-bot
-add-bot
-remove-bot
-status
-exit
-EOF
-
-sleep 2
+(
+  echo "new-normal"
+  echo "new-normal"
+  echo "new-vip"
+  echo "new-vip"
+  echo "status"
+  echo "add-bot"
+  echo "add-bot"
+  echo "remove-bot"
+  sleep 43
+  echo "exit"
+) | node index.js
 
 echo "CLI application execution completed"
 

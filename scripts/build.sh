@@ -1,4 +1,5 @@
 #!/bin/bash
+npm init -y
 
 # Build Script
 # This script should contain all compilation steps for your CLI application

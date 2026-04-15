@@ -1,4 +1,5 @@
 #!/bin/bash
+node index.js
 
 # Run Script
 # This script should execute your CLI application and output results to result.txt
